@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+  }
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    flex: 3;
+  }
+.spacer-container {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #000000;
+    text-shadow: .1em .1em 0 rgba(0,0,0,0.3);
+    justify-content: center;
+    height: 5%;
+    width: 33%;
+    text-align: center;
+}
+.locale-container {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #000000;
+    text-shadow: .1em .1em 0 rgba(0,0,0,0.3);
+    justify-content: right;
+    height: 40%;
+    width: 33%;
+    text-align: top;
+    text-align: center;
+}
+.spacer2 {
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    width: 100%;
+}
+.wind-container {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #000000;
+    text-shadow: .1em .1em 0 rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 35%;
+    width: 100%;
+}
+.temperature-container {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #000000;
+    text-shadow: .1em .1em 0 rgba(0,0,0,0.3);
+    flex-direction: row;
+    justify-content: center;
+    height: 40%;
+    width: 33%;
+    text-align: center;
+}
+h1 {
+    margin: 0 auto;
+    font-size: 1.9em;
+    text-align: center;
+    color: #fff;
+    font-size: 5em;
+}
+.search-container {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #000000;
+    text-shadow: .1em .1em 0 rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 25%;
+}
+
+body.clearDay {
+    background-image: url("01d.png"), linear-gradient(to right top, #ff4e50, #ff713e, #ff932b, #ffb41d, #f9d423);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body.clearNight {
+    background-image: url("01n.png"), linear-gradient(to right top, #080808, #345052, #695139, #5a4418, #5a4f17);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body.fewCloudsDay {
+    background-image: url("02d.png"), linear-gradient(to right top, #f9d423, #bdcf56, #cad18e, #d9dbbc, #9bbac5);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body.fewCloudsNight {
+    background-image: url("02n.png"), linear-gradient(to right top, #080808, #3d4849, #867b6f, #aca28f, #49676d);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body.scatteredCloudsDay {
+    background-image: url("03d.png"), linear-gradient(to right top, #63747c, #71858e, #7f96a0, #8da8b2, #9bbac5);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body.scatteredCloudsNight {
+    background-image: url("03d.png"), linear-gradient(to right top, #000000, #71858e, #7f96a0, #8da8b2, #9bbac5);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body.brokenCloudsDay {
+    background-image: url("04d.png"), linear-gradient(to right top, #63747c, #71858e, #7f96a0, #8da8b2, #9bbac5);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body.brokenCloudsNight {
+    background-image: url("04d.png"), linear-gradient(to right top, #000000, #71858e, #7f96a0, #8da8b2, #9bbac5);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body.overcastCloudsDay {
+    background-image: url("04d.png"), linear-gradient(to right top, #63747c, #71858e, #7f96a0, #8da8b2, #9bbac5);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body.overcastCloudsNight {
+    background-image: url("04d.png"), linear-gradient(to right top, #000000, #71858e, #7f96a0, #8da8b2, #9bbac5);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body.rainShowerDay {
+    background-image: url("09d.png"), linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+body.rainShowerNight {
+    background-image: url("09d.png"), linear-gradient(to right top, #000000, #71858e, #7f96a0, #8da8b2, #9bbac5);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+body.rainDay {
+    background-image: url("10d.png"), linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+body.rainNight {
+    background-image: url("10d.png"), linear-gradient(to right top, #000000, #71858e, #7f96a0, #8da8b2, #9bbac5);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+body.thunderstormDay {
+    background-image: url("11d.png"), linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+body.thunderstormNight {
+    background-image: url("11d.png"), linear-gradient(to right top, #000000, #71858e, #7f96a0, #8da8b2, #9bbac5);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+body.snowDay {
+    background-image: url("13d.png"), linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+body.snowNight {
+    background-image: url("13d.png"), linear-gradient(to right top, #000000, #71858e, #7f96a0, #8da8b2, #9bbac5);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+body.atmosphere {
+    background-image: url("50d.png"), linear-gradient(to right top, #637c7b, #718e8c, #7ea09e, #8db2b0, #9bc5c3);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
